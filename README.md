@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ Todo List — Stay Productive
 
-## Getting Started
+A modern, responsive Todo List application built with **Next.js, React, TypeScript, and Tailwind CSS**. Organize your daily tasks, track your progress, and stay focused with a clean interface and persistent local storage.
 
-First, run the development server:
+## 🚀 Features
+
+- **Task Management** — Add, edit, and organize tasks.
+- **Progress Tracking** — Mark tasks as completed or in progress.
+- **Smart Filtering** — Switch between All Tasks, In Progress, Completed, and Trash.
+- **Search** — Quickly find tasks by title.
+- **Trash & Recovery** — Restore deleted tasks or permanently remove them.
+- **Persistent Storage** — Tasks remain available after refreshing the page using browser `localStorage`.
+- **Dark Mode** — Switch between light and dark themes.
+- **Responsive Design** — A flexible layout for different screen sizes.
+- **Modern UI** — A clean interface with glassmorphism-inspired styling and subtle visual effects.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js | React framework |
+| React | UI components and state management |
+| TypeScript | Type safety |
+| Tailwind CSS | Styling and responsive design |
+| Lucide React | Icons |
+| Browser localStorage | Local task persistence |
+| Git & GitHub | Version control |
+
+## 📦 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Hossein-rafiee-esf/todo-list.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd todo-list
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+todo-list/
+├── app/
+│   ├── components/
+│   │   ├── Left-side/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Sidebar.tsx
+│   │   │   └── AddTask.tsx
+│   │   └── TaskContaxt.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-## Learn More
+## 💾 Data Persistence
 
-To learn more about Next.js, take a look at the following resources:
+Tasks are stored in the browser's `localStorage`, so adding, editing, completing, deleting, and restoring tasks does not require a backend server.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Note:** Data is stored locally in the current browser. It is not synchronized across devices or browsers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 What I Learned
 
-## Deploy on Vercel
+This project helped me practice:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Building reusable React components.
+- Sharing state between components using React Context.
+- Managing task state with `useState` and `useEffect`.
+- Creating typed data models with TypeScript.
+- Implementing search, filtering, and CRUD operations.
+- Persisting client-side data with `localStorage`.
+- Building responsive interfaces with Tailwind CSS.
+- Using Git and GitHub to manage project changes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🗺️ Future Improvements
+
+- [ ] Add drag-and-drop task ordering.
+- [ ] Add task priorities and due dates.
+- [ ] Add categories or labels.
+- [ ] Add backend storage and user authentication.
+- [ ] Deploy the application and add a live demo.
+
+## 👨‍💻 Author
+
+**Hossein Rafiei**
+
+- GitHub: [@Hossein-rafiee-esf](https://github.com/Hossein-rafiee-esf)
+
+---
+
+*Built with ❤️ and a focus on clean UI, usability, and continuous learning.*
