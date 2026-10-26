@@ -2,9 +2,11 @@
 
 A modern, responsive Todo List application built with **Next.js, React, TypeScript, and Tailwind CSS**. Organize your daily tasks, track your progress, and stay focused with a clean interface and persistent local storage.
 
+
 ## 📸 Preview
 
-![Todo List App Preview](./public/images/todo-list-preview.png)
+![Todo List App Preview](./public/image/todo-list-preview.png)
+
 
 ## 🚀 Features
 
